@@ -42,7 +42,11 @@
         </div>
 
         <div class="collapse navbar-collapse" id="myNavbar" style="color:white">
-                        <span class="glyphicon glyphicon-home text1">Home  </span>
+          <ul class="nav navbar-nav navbar-right">
+                 <li class="active" ng-click="home()" ng-if="!loggedIn">
+              <span class="glyphicon glyphicon-home text1">Home  </span>
+            </li >
+            </ul> 
 
 <!--           <ul class="nav navbar-nav navbar-right">
             <li ng-click="navCreate1()" ng-if="loggedIn">
