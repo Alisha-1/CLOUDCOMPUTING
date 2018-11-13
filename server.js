@@ -20,9 +20,10 @@ DATABASE_URL="postgres://femodzrnsqafnc:7e9011a13dc74d0ac54ac3776ebcea139197010f
 
 CAPSULE_URL="http://localhost:5000/#/Event/"
 
+
 AWS.config = new AWS.Config();
-AWS.config.accessKeyId ="AKIAJF5SZ64LKL5F3HEQ";
-AWS.config.secretAccessKey = "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";
+AWS.config.accessKeyId = process.env.AWS_ACCESS_KEY_ID;
+AWS.config.secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
 AWS.config.region = "us-east-1";
 
 var BASE_S3_URL = "https://s3.amazonaws.com/timecapsule-alisha";
